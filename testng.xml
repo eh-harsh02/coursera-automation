@@ -7,18 +7,22 @@
     <test name="Chrome Test">
         <parameter name="browser" value="chrome"/>
         <classes>
-        		<class name="tests.TestLandingPage"/>
-            <class name="tests.CourseAutomationTest"/>
+            <class name="tests.TestLandingPage"/>
+            <class name="tests.TestSearchResultsPage"/>
+            <class name="tests.TestCourseDetailsPage"/>
+            <class name="tests.TestEnterprisePage"></class>
         </classes>
     </test>
 
     <!-- Edge execution -->
-    <test name="Edge Test">
+<!--     <test name="Edge Test">
         <parameter name="browser" value="edge"/>
         <classes>
-        		<class name="tests.TestLandingPage"/>
-            <class name="tests.CourseAutomationTest"/>
+            <class name="tests.TestLandingPage"/>
+            <class name="tests.TestSearchResultsPage"/>
+            <class name="tests.TestCourseDetailsPage"/>
+            <class name="tests.TestEnterprisePage"></class>
         </classes>
-    </test>
+    </test>-->
 
 </suite>

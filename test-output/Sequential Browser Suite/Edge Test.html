@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>8/3/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed May 06 10:13:11 IST 2026</td>
+<td>Started on:</td><td>Wed May 06 10:11:21 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>62 seconds (62415 ms)</td>
+<tr><td>Total time:</td><td>41 seconds (41520 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,6 +76,63 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='tests.TestSearchResultsPage.verifySecondCourseDetails()'><b>verifySecondCourseDetails</b><br>Test class: tests.TestSearchResultsPage</td>
+<td><div><pre>java.lang.StringIndexOutOfBoundsException: Range [1, 0) out of bounds for length 40
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4855)
+	at java.base/java.lang.String.substring(String.java:2823)
+	at pages.SearchResultsPage.getCourseRating(SearchResultsPage.java:206)
+	at tests.TestSearchResultsPage.verifySecondCourseDetails(TestSearchResultsPage.java:129)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace7752890", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace7752890'><pre>java.lang.StringIndexOutOfBoundsException: Range [1, 0) out of bounds for length 40
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
+	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
+	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
+	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
+	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4855)
+	at java.base/java.lang.String.substring(String.java:2823)
+	at pages.SearchResultsPage.getCourseRating(SearchResultsPage.java:206)
+	at tests.TestSearchResultsPage.verifySecondCourseDetails(TestSearchResultsPage.java:129)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>tests.TestSearchResultsPage@2df3b89c</td></tr>
+<tr>
 <td title='tests.TestSearchResultsPage.verifyFirstCourseDetails()'><b>verifyFirstCourseDetails</b><br>Test class: tests.TestSearchResultsPage</td>
 <td><div><pre>java.lang.StringIndexOutOfBoundsException: Range [1, 0) out of bounds for length 31
 	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
@@ -90,12 +147,8 @@ function toggleAllBoxes() {
 	at pages.SearchResultsPage.getCourseRating(SearchResultsPage.java:206)
 	at tests.TestSearchResultsPage.verifyFirstCourseDetails(TestSearchResultsPage.java:100)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1627255385", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1627255385'><pre>java.lang.StringIndexOutOfBoundsException: Range [1, 0) out of bounds for length 31
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace726762476", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace726762476'><pre>java.lang.StringIndexOutOfBoundsException: Range [1, 0) out of bounds for length 31
 	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
 	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
 	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
@@ -121,12 +174,18 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
 <td>tests.TestSearchResultsPage@2df3b89c</td></tr>
@@ -146,12 +205,8 @@ function toggleAllBoxes() {
 	at pages.SearchResultsPage.printFirstTwoCourses(SearchResultsPage.java:246)
 	at tests.TestSearchResultsPage.printTopTwoCourses(TestSearchResultsPage.java:144)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace293493047", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace293493047'><pre>java.lang.StringIndexOutOfBoundsException: Range [1, 0) out of bounds for length 31
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace534643569", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace534643569'><pre>java.lang.StringIndexOutOfBoundsException: Range [1, 0) out of bounds for length 31
 	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
 	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
 	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
@@ -178,67 +233,18 @@ function toggleAllBoxes() {
 	at org.testng.TestRunner.privateRun(TestRunner.java:741)
 	at org.testng.TestRunner.run(TestRunner.java:616)
 	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>0</td>
-<td>tests.TestSearchResultsPage@2df3b89c</td></tr>
-<tr>
-<td title='tests.TestSearchResultsPage.verifySecondCourseDetails()'><b>verifySecondCourseDetails</b><br>Test class: tests.TestSearchResultsPage</td>
-<td><div><pre>java.lang.StringIndexOutOfBoundsException: Range [1, 0) out of bounds for length 40
-	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
-	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
-	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
-	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
-	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
-	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4855)
-	at java.base/java.lang.String.substring(String.java:2823)
-	at pages.SearchResultsPage.getCourseRating(SearchResultsPage.java:206)
-	at tests.TestSearchResultsPage.verifySecondCourseDetails(TestSearchResultsPage.java:129)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace597312517", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace597312517'><pre>java.lang.StringIndexOutOfBoundsException: Range [1, 0) out of bounds for length 40
-	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:55)
-	at java.base/jdk.internal.util.Preconditions$1.apply(Preconditions.java:52)
-	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:213)
-	at java.base/jdk.internal.util.Preconditions$4.apply(Preconditions.java:210)
-	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:98)
-	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckFromToIndex(Preconditions.java:112)
-	at java.base/jdk.internal.util.Preconditions.checkFromToIndex(Preconditions.java:349)
-	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:4855)
-	at java.base/java.lang.String.substring(String.java:2823)
-	at pages.SearchResultsPage.getCourseRating(SearchResultsPage.java:206)
-	at tests.TestSearchResultsPage.verifySecondCourseDetails(TestSearchResultsPage.java:129)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
 <td>0</td>
 <td>tests.TestSearchResultsPage@2df3b89c</td></tr>
@@ -252,45 +258,45 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.TestSearchResultsPage.verifyLanguagesDisplayed()'><b>verifyLanguagesDisplayed</b><br>Test class: tests.TestSearchResultsPage</td>
-<td></td>
-<td>5</td>
-<td>tests.TestSearchResultsPage@2df3b89c</td></tr>
-<tr>
-<td title='tests.TestSearchResultsPage.testLanguageFilter()'><b>testLanguageFilter</b><br>Test class: tests.TestSearchResultsPage</td>
+<td title='tests.TestLandingPage.testSearchCourses()'><b>testSearchCourses</b><br>Test class: tests.TestLandingPage</td>
 <td></td>
 <td>4</td>
-<td>tests.TestSearchResultsPage@2df3b89c</td></tr>
+<td>tests.TestLandingPage@38afe297</td></tr>
 <tr>
 <td title='tests.TestCourseDetailsPage.validateSecondCourseWindow()'><b>validateSecondCourseWindow</b><br>Test class: tests.TestCourseDetailsPage</td>
 <td></td>
-<td>4</td>
+<td>5</td>
 <td>tests.TestCourseDetailsPage@23348b5d</td></tr>
-<tr>
-<td title='tests.TestLandingPage.testSearchCourses()'><b>testSearchCourses</b><br>Test class: tests.TestLandingPage</td>
-<td></td>
-<td>16</td>
-<td>tests.TestLandingPage@38afe297</td></tr>
-<tr>
-<td title='tests.TestSearchResultsPage.verifyLevelsDisplayed()'><b>verifyLevelsDisplayed</b><br>Test class: tests.TestSearchResultsPage</td>
-<td></td>
-<td>0</td>
-<td>tests.TestSearchResultsPage@2df3b89c</td></tr>
 <tr>
 <td title='tests.TestSearchResultsPage.verifySearchResultsPageLoaded()'><b>verifySearchResultsPageLoaded</b><br>Test class: tests.TestSearchResultsPage</td>
 <td></td>
 <td>1</td>
 <td>tests.TestSearchResultsPage@2df3b89c</td></tr>
 <tr>
-<td title='tests.TestSearchResultsPage.testLevelFilter()'><b>testLevelFilter</b><br>Test class: tests.TestSearchResultsPage</td>
+<td title='tests.TestSearchResultsPage.verifyLevelsDisplayed()'><b>verifyLevelsDisplayed</b><br>Test class: tests.TestSearchResultsPage</td>
 <td></td>
-<td>2</td>
+<td>0</td>
 <td>tests.TestSearchResultsPage@2df3b89c</td></tr>
 <tr>
 <td title='tests.TestCourseDetailsPage.validateFirstCourseWindow()'><b>validateFirstCourseWindow</b><br>Test class: tests.TestCourseDetailsPage</td>
 <td></td>
-<td>5</td>
+<td>6</td>
 <td>tests.TestCourseDetailsPage@23348b5d</td></tr>
+<tr>
+<td title='tests.TestSearchResultsPage.testLanguageFilter()'><b>testLanguageFilter</b><br>Test class: tests.TestSearchResultsPage</td>
+<td></td>
+<td>1</td>
+<td>tests.TestSearchResultsPage@2df3b89c</td></tr>
+<tr>
+<td title='tests.TestSearchResultsPage.verifyLanguagesDisplayed()'><b>verifyLanguagesDisplayed</b><br>Test class: tests.TestSearchResultsPage</td>
+<td></td>
+<td>3</td>
+<td>tests.TestSearchResultsPage@2df3b89c</td></tr>
+<tr>
+<td title='tests.TestSearchResultsPage.testLevelFilter()'><b>testLevelFilter</b><br>Test class: tests.TestSearchResultsPage</td>
+<td></td>
+<td>1</td>
+<td>tests.TestSearchResultsPage@2df3b89c</td></tr>
 </table><p>
 </body>
 </html>

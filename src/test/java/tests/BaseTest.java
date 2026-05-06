@@ -12,48 +12,35 @@ import browser.BrowserImplementation;
 import config.ObjectReader;
 
 public class BaseTest {
-	// WebDriver reference
-	WebDriver driver = null;
 
-	// Browser setup class reference
-	BrowserImplementation browserImplementation;
+    private static ThreadLocal<WebDriver> driver = new ThreadLocal<>();
 
-	// Properties file reader reference
-	ObjectReader objectReader;
+    BrowserImplementation browserImplementation;
+    ObjectReader objectReader;
 
-	@Parameters("browser")
-	@BeforeTest
-	public void setUp(@Optional("chrome") String browserName) throws IOException {
+    @Parameters("browser")
+    @BeforeTest
+    public void setUp(@Optional("chrome") String browserName) throws IOException {
 
-		// Create browser implementation object
-		browserImplementation = new BrowserImplementation();
+        browserImplementation = new BrowserImplementation();
+        objectReader = new ObjectReader();
 
-		// Read data from object.properties file
-		objectReader = new ObjectReader();
+        if (browserName.equalsIgnoreCase("chrome")) {
+            driver.set(browserImplementation.getChromeDriver());
+        } else if (browserName.equalsIgnoreCase("edge")) {
+            driver.set(browserImplementation.getEdgeDriver());
+        }
 
-		// Read browser name from properties file
-		// String browserName = objectReader.getBrowser();
+        getDriver().get(objectReader.getBaseUrl());
+    }
 
-		// Launch browser based on browser name
-		if (browserName.equalsIgnoreCase("chrome")) {
-			driver = browserImplementation.getChromeDriver();
-		} else if (browserName.equalsIgnoreCase("edge")) {
-			driver = browserImplementation.getEdgeDriver();
-		} else {
-			throw new RuntimeException("Invalid browser name");
-		}
+    public static WebDriver getDriver() {
+        return driver.get();
+    }
 
-		// Open URL
-		driver.get(objectReader.getBaseUrl());
-	}
-
-	@AfterTest
-	public void tearDown() {
-
-		// Final screenshot after complete automation
-//		String finalScreenshotPath = ScreenshotUtil.takeScreenshot(driver, "Final_Execution_State");
-
-		// Close the browser
-		driver.quit();
-	}
+    @AfterTest
+    public void tearDown() {
+        getDriver().quit();
+        driver.remove();
+    }
 }

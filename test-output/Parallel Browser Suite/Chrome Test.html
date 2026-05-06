@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Chrome Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>2/2/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>16/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Apr 30 09:18:10 IST 2026</td>
+<td>Started on:</td><td>Wed May 06 15:26:55 IST 2026</td>
 </tr>
-<tr><td>Total time:</td><td>53 seconds (53770 ms)</td>
+<tr><td>Total time:</td><td>94 seconds (94613 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,98 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.CourseAutomationTest.testSearchResultsPage()'><b>testSearchResultsPage</b><br>Test class: tests.CourseAutomationTest</td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;driver&quot; is null
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:224)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:217)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
-	at utils.ElementUtils.waitForElementVisible(ElementUtils.java:24)
-	at pages.SearchResultsPage.getCourseDetails(SearchResultsPage.java:38)
-	at tests.CourseAutomationTest.testSearchResultsPage(CourseAutomationTest.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace770440777", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace770440777'><pre>java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;driver&quot; is null
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:224)
-	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:217)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
-	at utils.ElementUtils.waitForElementVisible(ElementUtils.java:24)
-	at pages.SearchResultsPage.getCourseDetails(SearchResultsPage.java:38)
-	at tests.CourseAutomationTest.testSearchResultsPage(CourseAutomationTest.java:20)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>0</td>
-<td>tests.CourseAutomationTest@6150c3ec</td></tr>
-<tr>
-<td title='tests.TestLandingPage.testSearchWithInvalidKeyword()'><b>testSearchWithInvalidKeyword</b><br>Test class: tests.TestLandingPage</td>
-<td><div><pre>java.lang.AssertionError: Search page not loaded for invalid input expected [true] but found [false]
-	at tests.TestLandingPage.testSearchWithInvalidKeyword(TestLandingPage.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-... Removed 18 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1437064127", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1437064127'><pre>java.lang.AssertionError: Search page not loaded for invalid input expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at tests.TestLandingPage.testSearchWithInvalidKeyword(TestLandingPage.java:32)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-	at org.testng.TestRunner.privateRun(TestRunner.java:741)
-	at org.testng.TestRunner.run(TestRunner.java:616)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1583)
-</pre></div></td>
-<td>26</td>
-<td>tests.TestLandingPage@4c12331b</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -168,15 +76,85 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.TestLandingPage.testSearchWithEmptyInput()'><b>testSearchWithEmptyInput</b><br>Test class: tests.TestLandingPage</td>
+<td title='tests.TestSearchResultsPage.testLevelFilter()'><b>testLevelFilter</b><br>Test class: tests.TestSearchResultsPage</td>
 <td></td>
-<td>6</td>
-<td>tests.TestLandingPage@4c12331b</td></tr>
+<td>2</td>
+<td>tests.TestSearchResultsPage@6743e411</td></tr>
+<tr>
+<td title='tests.TestSearchResultsPage.verifySecondCourseDetails()'><b>verifySecondCourseDetails</b><br>Test class: tests.TestSearchResultsPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestSearchResultsPage@6743e411</td></tr>
+<tr>
+<td title='tests.TestEnterprisePage.validateInvalidEmailError()'><b>validateInvalidEmailError</b><br>Test class: tests.TestEnterprisePage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestEnterprisePage@477b4cdf</td></tr>
+<tr>
+<td title='tests.TestSearchResultsPage.verifySearchResultsPageLoaded()'><b>verifySearchResultsPageLoaded</b><br>Test class: tests.TestSearchResultsPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestSearchResultsPage@6743e411</td></tr>
+<tr>
+<td title='tests.TestEnterprisePage.verifyForCampusNavigation()'><b>verifyForCampusNavigation</b><br>Test class: tests.TestEnterprisePage</td>
+<td></td>
+<td>8</td>
+<td>tests.TestEnterprisePage@477b4cdf</td></tr>
+<tr>
+<td title='tests.TestEnterprisePage.fillBasicDetailsTest()'><b>fillBasicDetailsTest</b><br>Test class: tests.TestEnterprisePage</td>
+<td></td>
+<td>3</td>
+<td>tests.TestEnterprisePage@477b4cdf</td></tr>
+<tr>
+<td title='tests.TestSearchResultsPage.verifyLanguagesDisplayed()'><b>verifyLanguagesDisplayed</b><br>Test class: tests.TestSearchResultsPage</td>
+<td></td>
+<td>3</td>
+<td>tests.TestSearchResultsPage@6743e411</td></tr>
+<tr>
+<td title='tests.TestCourseDetailsPage.validateFirstCourseWindow()'><b>validateFirstCourseWindow</b><br>Test class: tests.TestCourseDetailsPage</td>
+<td></td>
+<td>7</td>
+<td>tests.TestCourseDetailsPage@3eb25e1a</td></tr>
+<tr>
+<td title='tests.TestCourseDetailsPage.validateSecondCourseWindow()'><b>validateSecondCourseWindow</b><br>Test class: tests.TestCourseDetailsPage</td>
+<td></td>
+<td>5</td>
+<td>tests.TestCourseDetailsPage@3eb25e1a</td></tr>
+<tr>
+<td title='tests.TestEnterprisePage.fillRemainingFormTest()'><b>fillRemainingFormTest</b><br>Test class: tests.TestEnterprisePage</td>
+<td></td>
+<td>5</td>
+<td>tests.TestEnterprisePage@477b4cdf</td></tr>
+<tr>
+<td title='tests.TestEnterprisePage.submitWithValidEmail()'><b>submitWithValidEmail</b><br>Test class: tests.TestEnterprisePage</td>
+<td></td>
+<td>21</td>
+<td>tests.TestEnterprisePage@477b4cdf</td></tr>
+<tr>
+<td title='tests.TestSearchResultsPage.verifyFirstCourseDetails()'><b>verifyFirstCourseDetails</b><br>Test class: tests.TestSearchResultsPage</td>
+<td></td>
+<td>0</td>
+<td>tests.TestSearchResultsPage@6743e411</td></tr>
+<tr>
+<td title='tests.TestSearchResultsPage.testLanguageFilter()'><b>testLanguageFilter</b><br>Test class: tests.TestSearchResultsPage</td>
+<td></td>
+<td>1</td>
+<td>tests.TestSearchResultsPage@6743e411</td></tr>
 <tr>
 <td title='tests.TestLandingPage.testSearchCourses()'><b>testSearchCourses</b><br>Test class: tests.TestLandingPage</td>
 <td></td>
+<td>8</td>
+<td>tests.TestLandingPage@682b2fa</td></tr>
+<tr>
+<td title='tests.TestSearchResultsPage.verifyLevelsDisplayed()'><b>verifyLevelsDisplayed</b><br>Test class: tests.TestSearchResultsPage</td>
+<td></td>
 <td>1</td>
-<td>tests.TestLandingPage@4c12331b</td></tr>
+<td>tests.TestSearchResultsPage@6743e411</td></tr>
+<tr>
+<td title='tests.TestSearchResultsPage.printTopTwoCourses()'><b>printTopTwoCourses</b><br>Test class: tests.TestSearchResultsPage</td>
+<td></td>
+<td>1</td>
+<td>tests.TestSearchResultsPage@6743e411</td></tr>
 </table><p>
 </body>
 </html>

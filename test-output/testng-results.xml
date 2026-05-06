@@ -1,134 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="8" passed="4" failed="4" skipped="0">
+<testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-04-30T09:18:10 IST" name="Parallel Browser Suite" finished-at="2026-04-30T09:19:04 IST" duration-ms="53770">
+  <suite started-at="2026-05-06T15:26:55 IST" name="Parallel Browser Suite" finished-at="2026-05-06T15:28:30 IST" duration-ms="94613">
     <groups>
     </groups>
-    <test started-at="2026-04-30T09:18:10 IST" name="Edge Test" finished-at="2026-04-30T09:19:03 IST" duration-ms="52906">
+    <test started-at="2026-05-06T15:26:55 IST" name="Chrome Test" finished-at="2026-05-06T15:28:30 IST" duration-ms="94613">
       <class name="tests.TestLandingPage">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.TestLandingPage@3bd82cf5]" started-at="2026-04-30T09:18:10 IST" name="setUp" finished-at="2026-04-30T09:18:27 IST" duration-ms="16462" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[edge]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testSearchWithEmptyInput()[pri:0, instance:tests.TestLandingPage@3bd82cf5]" started-at="2026-04-30T09:18:27 IST" name="testSearchWithEmptyInput" finished-at="2026-04-30T09:18:29 IST" duration-ms="2116" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchWithEmptyInput -->
-        <test-method is-config="true" signature="init()[pri:0, instance:tests.TestLandingPage@3bd82cf5]" started-at="2026-04-30T09:18:27 IST" name="init" finished-at="2026-04-30T09:18:27 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method is-config="true" signature="init()[pri:0, instance:tests.TestLandingPage@3bd82cf5]" started-at="2026-04-30T09:18:29 IST" name="init" finished-at="2026-04-30T09:18:29 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="testSearchWithInvalidKeyword()[pri:1, instance:tests.TestLandingPage@3bd82cf5]" started-at="2026-04-30T09:18:29 IST" name="testSearchWithInvalidKeyword" finished-at="2026-04-30T09:18:52 IST" duration-ms="23266" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Search page not loaded for invalid input expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Search page not loaded for invalid input expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at tests.TestLandingPage.testSearchWithInvalidKeyword(TestLandingPage.java:32)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchWithInvalidKeyword -->
-        <test-method is-config="true" signature="init()[pri:0, instance:tests.TestLandingPage@3bd82cf5]" started-at="2026-04-30T09:18:52 IST" name="init" finished-at="2026-04-30T09:18:52 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="testSearchCourses()[pri:2, instance:tests.TestLandingPage@3bd82cf5]" started-at="2026-04-30T09:18:52 IST" name="testSearchCourses" finished-at="2026-04-30T09:18:54 IST" duration-ms="2139" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchCourses -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestLandingPage@3bd82cf5]" started-at="2026-04-30T09:18:54 IST" name="tearDown" finished-at="2026-04-30T09:19:03 IST" duration-ms="8850" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.TestLandingPage -->
-      <class name="tests.CourseAutomationTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:tests.CourseAutomationTest@544fa968]" started-at="2026-04-30T09:18:27 IST" name="init" finished-at="2026-04-30T09:18:27 IST" duration-ms="5" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="testSearchResultsPage()[pri:0, instance:tests.CourseAutomationTest@544fa968]" started-at="2026-04-30T09:18:27 IST" name="testSearchResultsPage" finished-at="2026-04-30T09:18:27 IST" duration-ms="8" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "driver" is null
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:224)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:217)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
-at utils.ElementUtils.waitForElementVisible(ElementUtils.java:24)
-at pages.SearchResultsPage.getCourseDetails(SearchResultsPage.java:38)
-at tests.CourseAutomationTest.testSearchResultsPage(CourseAutomationTest.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchResultsPage -->
-      </class> <!-- tests.CourseAutomationTest -->
-    </test> <!-- Edge Test -->
-    <test started-at="2026-04-30T09:18:10 IST" name="Chrome Test" finished-at="2026-04-30T09:19:04 IST" duration-ms="53770">
-      <class name="tests.TestLandingPage">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.TestLandingPage@4c12331b]" started-at="2026-04-30T09:18:10 IST" name="setUp" finished-at="2026-04-30T09:18:19 IST" duration-ms="8784" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.TestLandingPage@682b2fa]" started-at="2026-05-06T15:26:55 IST" name="setUp" finished-at="2026-05-06T15:27:06 IST" duration-ms="10956" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -139,113 +18,97 @@ at java.base/java.lang.Thread.run(Thread.java:1583)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="init()[pri:0, instance:tests.TestLandingPage@4c12331b]" started-at="2026-04-30T09:18:20 IST" name="init" finished-at="2026-04-30T09:18:20 IST" duration-ms="37" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:tests.TestLandingPage@682b2fa]" started-at="2026-05-06T15:27:06 IST" name="init" finished-at="2026-05-06T15:27:07 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testSearchWithEmptyInput()[pri:0, instance:tests.TestLandingPage@4c12331b]" started-at="2026-04-30T09:18:20 IST" name="testSearchWithEmptyInput" finished-at="2026-04-30T09:18:26 IST" duration-ms="6381" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchWithEmptyInput -->
-        <test-method is-config="true" signature="init()[pri:0, instance:tests.TestLandingPage@4c12331b]" started-at="2026-04-30T09:18:26 IST" name="init" finished-at="2026-04-30T09:18:26 IST" duration-ms="1" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="testSearchWithInvalidKeyword()[pri:1, instance:tests.TestLandingPage@4c12331b]" started-at="2026-04-30T09:18:26 IST" name="testSearchWithInvalidKeyword" finished-at="2026-04-30T09:18:52 IST" duration-ms="26009" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[Search page not loaded for invalid input expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Search page not loaded for invalid input expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertTrue(Assert.java:57)
-at tests.TestLandingPage.testSearchWithInvalidKeyword(TestLandingPage.java:32)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testSearchWithInvalidKeyword -->
-        <test-method is-config="true" signature="init()[pri:0, instance:tests.TestLandingPage@4c12331b]" started-at="2026-04-30T09:18:52 IST" name="init" finished-at="2026-04-30T09:18:52 IST" duration-ms="4" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- init -->
-        <test-method signature="testSearchCourses()[pri:2, instance:tests.TestLandingPage@4c12331b]" started-at="2026-04-30T09:18:52 IST" name="testSearchCourses" finished-at="2026-04-30T09:18:54 IST" duration-ms="1649" status="PASS">
+        <test-method signature="testSearchCourses()[pri:0, instance:tests.TestLandingPage@682b2fa]" started-at="2026-05-06T15:27:07 IST" name="testSearchCourses" finished-at="2026-05-06T15:27:15 IST" duration-ms="8224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testSearchCourses -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestLandingPage@4c12331b]" started-at="2026-04-30T09:18:54 IST" name="tearDown" finished-at="2026-04-30T09:19:04 IST" duration-ms="10123" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.TestLandingPage@682b2fa]" started-at="2026-05-06T15:28:20 IST" name="tearDown" finished-at="2026-05-06T15:28:30 IST" duration-ms="10034" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.TestLandingPage -->
-      <class name="tests.CourseAutomationTest">
-        <test-method is-config="true" signature="init()[pri:0, instance:tests.CourseAutomationTest@6150c3ec]" started-at="2026-04-30T09:18:20 IST" name="init" finished-at="2026-04-30T09:18:20 IST" duration-ms="102" status="PASS">
+      <class name="tests.TestSearchResultsPage">
+        <test-method is-config="true" signature="init()[pri:0, instance:tests.TestSearchResultsPage@6743e411]" started-at="2026-05-06T15:27:15 IST" name="init" finished-at="2026-05-06T15:27:15 IST" duration-ms="93" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="testSearchResultsPage()[pri:0, instance:tests.CourseAutomationTest@6150c3ec]" started-at="2026-04-30T09:18:20 IST" name="testSearchResultsPage" finished-at="2026-04-30T09:18:20 IST" duration-ms="137" status="FAIL">
-          <exception class="java.lang.NullPointerException">
-            <message>
-              <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "driver" is null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)" because "driver" is null
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:224)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:217)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:207)
-at utils.ElementUtils.waitForElementVisible(ElementUtils.java:24)
-at pages.SearchResultsPage.getCourseDetails(SearchResultsPage.java:38)
-at tests.CourseAutomationTest.testSearchResultsPage(CourseAutomationTest.java:20)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1583)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method signature="verifySearchResultsPageLoaded()[pri:1, instance:tests.TestSearchResultsPage@6743e411]" started-at="2026-05-06T15:27:15 IST" name="verifySearchResultsPageLoaded" finished-at="2026-05-06T15:27:16 IST" duration-ms="591" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testSearchResultsPage -->
-      </class> <!-- tests.CourseAutomationTest -->
+        </test-method> <!-- verifySearchResultsPageLoaded -->
+        <test-method signature="verifyLanguagesDisplayed()[pri:2, instance:tests.TestSearchResultsPage@6743e411]" started-at="2026-05-06T15:27:16 IST" name="verifyLanguagesDisplayed" finished-at="2026-05-06T15:27:19 IST" duration-ms="3618" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLanguagesDisplayed -->
+        <test-method signature="testLanguageFilter()[pri:3, instance:tests.TestSearchResultsPage@6743e411]" started-at="2026-05-06T15:27:19 IST" name="testLanguageFilter" finished-at="2026-05-06T15:27:21 IST" duration-ms="1498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLanguageFilter -->
+        <test-method signature="verifyLevelsDisplayed()[pri:4, instance:tests.TestSearchResultsPage@6743e411]" started-at="2026-05-06T15:27:21 IST" name="verifyLevelsDisplayed" finished-at="2026-05-06T15:27:22 IST" duration-ms="1210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLevelsDisplayed -->
+        <test-method signature="testLevelFilter()[pri:5, instance:tests.TestSearchResultsPage@6743e411]" started-at="2026-05-06T15:27:22 IST" name="testLevelFilter" finished-at="2026-05-06T15:27:24 IST" duration-ms="2461" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLevelFilter -->
+        <test-method signature="verifyFirstCourseDetails()[pri:6, instance:tests.TestSearchResultsPage@6743e411]" started-at="2026-05-06T15:27:24 IST" name="verifyFirstCourseDetails" finished-at="2026-05-06T15:27:25 IST" duration-ms="895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyFirstCourseDetails -->
+        <test-method signature="verifySecondCourseDetails()[pri:7, instance:tests.TestSearchResultsPage@6743e411]" started-at="2026-05-06T15:27:25 IST" name="verifySecondCourseDetails" finished-at="2026-05-06T15:27:26 IST" duration-ms="815" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySecondCourseDetails -->
+        <test-method signature="printTopTwoCourses()[pri:8, instance:tests.TestSearchResultsPage@6743e411]" started-at="2026-05-06T15:27:26 IST" name="printTopTwoCourses" finished-at="2026-05-06T15:27:27 IST" duration-ms="1105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- printTopTwoCourses -->
+      </class> <!-- tests.TestSearchResultsPage -->
+      <class name="tests.TestCourseDetailsPage">
+        <test-method is-config="true" signature="init()[pri:0, instance:tests.TestCourseDetailsPage@3eb25e1a]" started-at="2026-05-06T15:27:27 IST" name="init" finished-at="2026-05-06T15:27:27 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="validateFirstCourseWindow()[pri:9, instance:tests.TestCourseDetailsPage@3eb25e1a]" started-at="2026-05-06T15:27:27 IST" name="validateFirstCourseWindow" finished-at="2026-05-06T15:27:35 IST" duration-ms="7577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateFirstCourseWindow -->
+        <test-method signature="validateSecondCourseWindow()[pri:10, instance:tests.TestCourseDetailsPage@3eb25e1a]" started-at="2026-05-06T15:27:35 IST" name="validateSecondCourseWindow" finished-at="2026-05-06T15:27:40 IST" duration-ms="5537" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSecondCourseWindow -->
+      </class> <!-- tests.TestCourseDetailsPage -->
+      <class name="tests.TestEnterprisePage">
+        <test-method is-config="true" signature="init()[pri:0, instance:tests.TestEnterprisePage@477b4cdf]" started-at="2026-05-06T15:27:40 IST" name="init" finished-at="2026-05-06T15:27:40 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method signature="verifyForCampusNavigation()[pri:11, instance:tests.TestEnterprisePage@477b4cdf]" started-at="2026-05-06T15:27:40 IST" name="verifyForCampusNavigation" finished-at="2026-05-06T15:27:48 IST" duration-ms="8044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyForCampusNavigation -->
+        <test-method signature="fillBasicDetailsTest()[pri:12, instance:tests.TestEnterprisePage@477b4cdf]" started-at="2026-05-06T15:27:48 IST" name="fillBasicDetailsTest" finished-at="2026-05-06T15:27:52 IST" duration-ms="3131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillBasicDetailsTest -->
+        <test-method signature="fillRemainingFormTest()[pri:13, instance:tests.TestEnterprisePage@477b4cdf]" started-at="2026-05-06T15:27:52 IST" name="fillRemainingFormTest" finished-at="2026-05-06T15:27:57 IST" duration-ms="5749" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fillRemainingFormTest -->
+        <test-method signature="validateInvalidEmailError()[pri:14, instance:tests.TestEnterprisePage@477b4cdf]" started-at="2026-05-06T15:27:57 IST" name="validateInvalidEmailError" finished-at="2026-05-06T15:27:58 IST" duration-ms="707" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateInvalidEmailError -->
+        <test-method signature="submitWithValidEmail()[pri:15, instance:tests.TestEnterprisePage@477b4cdf]" started-at="2026-05-06T15:27:58 IST" name="submitWithValidEmail" finished-at="2026-05-06T15:28:20 IST" duration-ms="21952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitWithValidEmail -->
+      </class> <!-- tests.TestEnterprisePage -->
     </test> <!-- Chrome Test -->
   </suite> <!-- Parallel Browser Suite -->
 </testng-results>
