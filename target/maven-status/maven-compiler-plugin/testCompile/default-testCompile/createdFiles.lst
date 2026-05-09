@@ -1,0 +1,5 @@
+tests\TestSearchResultsPage.class
+tests\BaseTest.class
+tests\TestEnterprisePage.class
+tests\TestLandingPage.class
+tests\TestCourseDetailsPage.class

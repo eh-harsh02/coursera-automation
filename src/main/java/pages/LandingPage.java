@@ -8,12 +8,20 @@ import org.openqa.selenium.WebElement;
 import utils.ElementUtils;
 
 public class LandingPage {
-
+	
+	// WebDriver reference
 	WebDriver driver;
+	
+	// Utility class for element actions
 	ElementUtils elementUtils;
-
+	
+	// Constructor
 	public LandingPage(WebDriver driver) {
+		
+		// Assign driver
 		this.driver = driver;
+		
+		// Create ElementUtils object
 		elementUtils = new ElementUtils(driver);
 	}
 
@@ -33,11 +41,6 @@ public class LandingPage {
 	// Check if search box is enabled
 	public boolean isSearchBoxEnabled() {
 		return elementUtils.isElementEnabled(searchBox);
-	}
-
-	// Press search without entering text
-	public void searchEmptyString() {
-		elementUtils.waitForElementVisible(searchBox).sendKeys(Keys.ENTER);
 	}
 
 	// Enter text in search box and submit

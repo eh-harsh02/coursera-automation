@@ -1,18 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite thread-count="2" parallel="tests" name="Failed suite [Parallel Browser Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="extentReportListner.ExtentReportManager"/>
+  </listeners>
   <test thread-count="2" parallel="tests" name="Chrome Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="tests.TestSearchResultsPage">
+      <class name="tests.TestEnterprisePage">
         <methods>
-          <include name="verifySecondCourseDetails"/>
+          <include name="endExcel"/>
+          <include name="verifyTextFieldsEnabled"/>
+          <include name="fillBasicDetailsTest"/>
+          <include name="verifyDropdownsEnabled"/>
           <include name="init"/>
-          <include name="verifyFirstCourseDetails"/>
-          <include name="tearDown"/>
+          <include name="startExcel"/>
           <include name="setUp"/>
+          <include name="captureResult"/>
+          <include name="validateInvalidEmailError"/>
+          <include name="verifySubmitButtonEnabled"/>
+          <include name="verifyForCampusNavigation"/>
+          <include name="submitWithValidEmail"/>
+          <include name="fillRemainingFormTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.TestSearchResultsPage -->
+      </class> <!-- tests.TestEnterprisePage -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Parallel Browser Suite] -->

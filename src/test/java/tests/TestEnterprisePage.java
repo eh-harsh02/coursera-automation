@@ -1,81 +1,129 @@
 package tests;
 
+import java.util.Map;
+
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import pages.EnterprisePage;
+import utils.ScreenshotUtil;
 
 public class TestEnterprisePage extends BaseTest {
+	
+	// Page class reference
+	private EnterprisePage enterprisePage;
 
-    private EnterprisePage enterprisePage;
+	@BeforeClass
+	public void init() {
+		enterprisePage = new EnterprisePage(getDriver());
+	}
 
-    @BeforeClass
-    public void init() {
-        enterprisePage = new EnterprisePage(getDriver());
-    }
+	// Verify campus page
+	@Test(priority = 13)
+	public void verifyForCampusNavigation() {
 
-    // ================= TEST 1 =================
-    @Test(priority = 11)
-    public void verifyForCampusNavigation() {
+		enterprisePage.clickForCampus();
 
-        enterprisePage.clickForCampus();
+		Assert.assertTrue(getDriver().getCurrentUrl().contains("campus"), "Navigation to For Campus page failed");
+	}
 
-        Assert.assertTrue(getDriver().getCurrentUrl().contains("campus"), "Navigation to For Campus page failed");
-    }
+	// Verify all text fields are enabled
+	@Test(priority = 14)
+	public void verifyTextFieldsEnabled() {
 
-    // ================= TEST 2 =================
-    @Test(priority = 12)
-    public void fillBasicDetailsTest() {
+		Map<String, Boolean> fields = enterprisePage.getTextFieldsStatus();
 
-        enterprisePage.enterFirstName("Test");
-        enterprisePage.enterLastName("User");
-        enterprisePage.enterEmail("test123.com"); // invalid email
-        enterprisePage.enterPhone("8876503210");
+		for (Map.Entry<String, Boolean> entry : fields.entrySet()) {
+			Assert.assertTrue(entry.getValue(), entry.getKey() + " field is NOT enabled");
+		}
 
-        Assert.assertTrue(true, "Basic details entered");
-    }
+		System.out.println("All text fields are enabled");
+	}
 
-    // ================= TEST 3 =================
-    @Test(priority = 13)
-    public void fillRemainingFormTest() {
+	// Enter basic details with invalid email
+	@Test(priority = 15)
+	public void fillBasicDetailsTest() {
 
-        enterprisePage.selectInstitutionType("University/4 Year College");
-        enterprisePage.enterInstitutionName("Cognizant");
+		enterprisePage.enterFirstName("Test");
+		enterprisePage.enterLastName("User");
+		enterprisePage.enterEmail("test123.com"); // invalid email
+		enterprisePage.enterPhone("8876503210");
 
-        enterprisePage.selectJobRole("Student");
-        enterprisePage.selectDepartment("Teaching/Faculty/Research");
-        enterprisePage.selectNeeds("Learner Support");
+		Assert.assertTrue(true, "Basic details entered");
+	}
 
-        enterprisePage.selectCountry("India");
-        enterprisePage.selectState("Bihar");
+	// Verify all dropdowns are enabled
+	@Test(priority = 16)
+	public void verifyDropdownsEnabled() {
 
-        Assert.assertTrue(true, "Remaining form filled");
-    }
+		Map<String, Boolean> dropdowns = enterprisePage.getDropdownsStatus();
 
-    // ================= TEST 4 =================
-    @Test(priority = 14)
-    public void validateInvalidEmailError() {
+		for (Map.Entry<String, Boolean> entry : dropdowns.entrySet()) {
+			Assert.assertTrue(entry.getValue(), entry.getKey() + " dropdown is NOT enabled");
+		}
 
-        enterprisePage.clickSubmit();
+		System.out.println("All dropdowns are enabled");
+	}
 
-        String errorMsg = enterprisePage.getInvalidEmailMessage();
+	// Fill remaining form details
+	@Test(priority = 17)
+	public void fillRemainingFormTest() {
 
-        System.out.println("Error Message: " + errorMsg);
+		enterprisePage.selectInstitutionType("University/4 Year College");
+		enterprisePage.enterInstitutionName("Cognizant");
 
-        Assert.assertTrue(errorMsg.toLowerCase().contains("email"), "Invalid email error NOT displayed");
-    }
+		enterprisePage.selectJobRole("Student");
+		enterprisePage.selectDepartment("Teaching/Faculty/Research");
+		enterprisePage.selectNeeds("Learner Support");
 
-    // ================= TEST 5 =================
-    @Test(priority = 15)
-    public void submitWithValidEmail() {
+		enterprisePage.selectCountry("India");
 
-        enterprisePage.enterEmail("test.user@company.com");
+		Assert.assertTrue(enterprisePage.isStateDropdownEnabled(),
+				"State dropdown is NOT enabled after selecting country");
 
-        enterprisePage.clickSubmit();
+		enterprisePage.selectState("Bihar");
 
-        Assert.assertFalse(enterprisePage.isErrorMessageDisplayed(), "Error still present after valid email");
+		Assert.assertTrue(true, "Remaining form filled");
+	}
 
-        System.out.println("Form submitted successfully");
-    }
+	// Verify submit button is enabled
+	@Test(priority = 18)
+	public void verifySubmitButtonEnabled() {
+
+		Assert.assertTrue(enterprisePage.isSubmitButtonEnabled(), "Submit button is NOT enabled");
+
+		System.out.println("Submit button is enabled and clickable");
+	}
+
+	// Validate error for invalid email
+	@Test(priority = 19)
+	public void validateInvalidEmailError() {
+
+		enterprisePage.clickSubmit();
+
+		String errorMsg = enterprisePage.getInvalidEmailMessage();
+
+		System.out.println("Error Message: " + errorMsg);
+
+		// Take Screenshot after error message appears
+		String screenshotPath = ScreenshotUtil.takeScreenshot(getDriver(), "InvalidEmailError");
+
+		System.out.println("Email Error Screenshot saved at: " + screenshotPath);
+
+		Assert.assertTrue(errorMsg.toLowerCase().contains("email"), "Invalid email error NOT displayed");
+	}
+
+	// Submit form with valid email
+	@Test(priority = 20)
+	public void submitWithValidEmail() {
+
+		enterprisePage.enterEmail("test.user@company.com");
+
+		enterprisePage.clickSubmit();
+
+		Assert.assertFalse(enterprisePage.isErrorMessageDisplayed(), "Error still present after valid email");
+
+		System.out.println("Form submitted successfully");
+	}
 }
